@@ -15,5 +15,5 @@ Molnet gör det lätt att komma åt saker som lagras där och lättare att anvä
 
 ## Prisundersökning
 
-![Azure Price](https://github.com/Kristianjimmefors/Jekyll-Test/blob/main/assets/img/Azure%20v2.PNG)
+![Azure Price](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Azure%20v2.PNG)
 
