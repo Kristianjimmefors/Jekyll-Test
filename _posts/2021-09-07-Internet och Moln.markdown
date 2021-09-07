@@ -33,5 +33,6 @@ AWS
 ![AWS](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/AWS(amazon).PNG)
 
 Google cloud
+
 ![Google cloud](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Google%20Cloud.PNG)
 
