@@ -15,5 +15,15 @@ Molnet gör det lätt att komma åt saker som lagras där och lättare att anvä
 
 ## Prisundersökning
 
+Om jag har valt rätt saker på dem olika tjänsterna så blir priserna såhär:
+
+| Service          | Månadskostnad | Årskostnad  |
+| -----------------|:-------------:| -----------:|
+| Azure (Microsoft)|     $1130     |   $13 560   |
+| AWS (Amazon)     |     $394      |   $4 728    |
+| Google cloud     |     $122      |   $1 464    |
+
 ![Azure Price](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Azure%20v2.PNG)
+![AWS](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Azure%20v2.PNG)
+![Google cloud](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Azure%20v2.PNG)
 
