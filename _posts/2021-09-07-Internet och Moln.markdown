@@ -13,6 +13,7 @@ Molnet eller molntjänster som det även kallas är IT tjänster som tillhandah�
 ## Vilka för delar och nackdelar kan molnet introducera?
 Molnet gör det lätt att komma åt saker som lagras där och lättare att använda och sälja tjänster. En fördel med molntjänster är att man kan komma åt dem vart man än är sålänge man har en internet anslutning. Molnet gör även att man blir beroände på någon annan för att få sina saker eller tjänster att funka. Säkerhet blir även en mycket viktigare fråga när man använder molntjänster eftersom att allt ligger ute på internet så kan det bli lättare för hackare att komma åt dem. Ofta så måste man även tänka på hur säker molntjänsten man använder är och inte bara på hur säkert det man själv har gjort är eftersom det spelar också en stor roll in i hur säkert allt är överlag.
 
-## Pris undersökning
+## Prisundersökning
 
+![Azure Price](/assets/img/Azure v2.PNG "Azure Price")
 
