@@ -2,9 +2,9 @@
 layout: post
 title: Internet och Moln
 subtitle: Uppgift 1
-cover-img: /assets/img/cloud-cover.jpg
+cover-img: /assets/img/cloud-show.jpg
 thumbnail-img: /assets/img/cloud-show.jpg
-share-img: /assets/img/path.jpg
+share-img: /assets/img/cloud-show.jpg
 categories: [Uppgifter, Internet, Moln]
 ---
 ## Vad är molnet?
