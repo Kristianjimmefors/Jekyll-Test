@@ -17,6 +17,11 @@ Molnet gör det lätt att komma åt saker som lagras där och lättare att anvä
 
 Jag tyckte det var väldigt svårt att veta vad man skulle ha när man kollade på dem stora företagens pris kalkylator för det fanns så mycket och inte något bra sett att söka för få fram det som önskades tyckte jag. Eftersom att det var svårt att hitta det som behövdes valde jag förmodligen lite mer än vad man behövde men det som jag kom fram till var att Azure var dyrast och det berodde på att det är väldigt dyrt att hyra en sql server utav dem (kanske var lite overkill att ha en sql server för övnigen). Som jag förstod det utav uppgiften så behövdes det inte så mycket och då tycker jag att det räcker med ett vanligt web hosting service vilket är mycket billigare än dem stora företagen
 
+Jag använde mig utav Azure, AWS och Google clouds pris kalkylatorer för att få fram priserna.
+Azure: [Pris kalkylator](https://azure.microsoft.com/en-us/pricing/calculator/)
+AWS: [Pris kalkylator](https://calculator.aws/#/)
+Google Cloud: [Pris kalkylator](https://cloud.google.com/products/calculator/)
+
 Om jag har valt rätt saker på dem olika tjänsterna så blir priserna såhär:
 
 | Service          | Månadskostnad | Årskostnad  |
