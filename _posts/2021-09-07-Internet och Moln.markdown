@@ -2,7 +2,7 @@
 layout: post
 title: Internet och Moln
 subtitle: Uppgift 1
-cover-img: /assets/img/cloud-over.jpg
+cover-img: /assets/img/cloud-cover.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 categories: [Uppgifter, Internet, Moln]
