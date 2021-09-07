@@ -21,7 +21,7 @@
 title: Programmerings grottan
 email: kristian.jimmefors@gmail.com
 description: This is an awsome blog about the internet in the cloud
-baseurl: "/Jekyll-Test" # the subpath of your site, e.g. /blog
+baseurl: "/Programmerings-grottan" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  KristianJimmefors
