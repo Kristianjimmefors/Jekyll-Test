@@ -24,6 +24,6 @@ Om jag har valt rätt saker på dem olika tjänsterna så blir priserna såhär:
 | Google cloud     |     $122      |   $1 464    |
 
 ![Azure Price](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Azure%20v2.PNG)
-![AWS](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Azure%20v2.PNG)
-![Google cloud](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Azure%20v2.PNG)
+![AWS](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/AWS(amazon).PNG)
+![Google cloud](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Google%20Cloud.PNG)
 
