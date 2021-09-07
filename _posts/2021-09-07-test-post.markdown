@@ -1,12 +1,7 @@
 ---
 layout: post
-title: Test post
-subtitle: ja hej hej
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
-tags: [books, test]
+title:  "Test"
+date:   2021-09-07 13:57:22 +0200
+categories: jekyll update
 ---
-
-
-Tjenare Tjenare
+Ja hej hej
