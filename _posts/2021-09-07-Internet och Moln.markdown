@@ -44,3 +44,9 @@ Google cloud
 
 ![Google cloud](https://raw.githubusercontent.com/Kristianjimmefors/Jekyll-Test/main/assets/img/Google%20Cloud.PNG)
 
+
+Sidor jag använde som referenser:
+[itsnordic.se](https://www.itsnordic.se/kunskapsbank/vad-ar-en-molntjanst/)
+
+[storegate.com](https://www.storegate.com/se/blogg/vad-ar-molnet-och-kan-jag-lita-pa-det/)
+
