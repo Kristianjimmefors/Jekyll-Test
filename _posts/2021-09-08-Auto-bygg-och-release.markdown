@@ -9,7 +9,9 @@ categories: [Uppgifter, Internet, Moln, automation]
 ---
 
 ## Vad är en CI pipline
-CI är en förkortning för Continuous integration. Kontinuerlig intergration är i en kodsningsfilosofi och en uppsättning metoder för att driva utvecklingen framåt med små förändringar i koden och sedan hantera det i den nya kodbasen. Målet med Kontinuerlig intergration är att etablera ett konsekvent och automatiserat sätt att bygga, paketera och testa applikationer.
+CI är en förkortning för Continuous integration. Continuous integration är en kodsningsfilosofi och en uppsättning metoder för att driva utvecklingen framåt med små förändringar i koden och pusha det till sin kodbas. Målet med Continuous integration är att etablera ett konsekvent och automatiserat sätt att bygga, paketera och testa applikationer. Fördelen med Continuous integration är att man inte behöver sitta och hålla på med stora merge conflicts när man har byggt färdigt en funktion som kan ha tagit flera veckor att bygga, istället så pushar man ofta till sin kodbas så ser man snabbt om det har blivit något fel eller problem i koden och gör det lättare att fixa felen som har uppstått.
 
+Referenser som jag har använt:
+[What is Continuous Integration?](https://www.youtube.com/watch?v=1er2cjUq1UI)
 
-[idg.se](https://cio.idg.se/2.1782/1.730602/ci-cd-standiga-flodet)
+[About continuous integration](https://docs.github.com/en/actions/guides/about-continuous-integration)
