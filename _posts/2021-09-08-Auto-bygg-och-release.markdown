@@ -2,10 +2,10 @@
 layout: post
 title: Automatisering av bygg och release
 subtitle: Uppgift 2
-cover-img: /assets/img/cloud-show.jpg
-thumbnail-img: /assets/img/cloud-show.jpg
-share-img: /assets/img/cloud-show.jpg
-categories: [Uppgifter, Internet, Moln, automation]
+cover-img: /assets/img/CI-Actions.PNG
+thumbnail-img: /assets/img/Devops.jpg
+share-img: /assets/img/Devops.jpg
+categories: [Uppgifter, Internet, automation]
 ---
 
 ## Vad är en CI pipline
