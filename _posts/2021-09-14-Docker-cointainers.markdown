@@ -2,7 +2,7 @@
 layout: post
 title: Containers och docker
 subtitle: Uppgift 3
-cover-img: /assets/img/cloud-show.PNG
+cover-img: /assets/img/cloud-show.jpg
 thumbnail-img: /assets/img/cloud-show.jpg
 share-img: /assets/img/cloud-show.jpg
 categories: [Uppgifter, Internet, automation]
