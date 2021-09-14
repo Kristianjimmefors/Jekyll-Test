@@ -8,6 +8,8 @@ share-img: /assets/img/cloud-show.jpg
 categories: [Uppgifter, Internet, automation]
 ---
 
+#Docker med github actions
+
 Jag har installerat [docker desktop](https://docs.docker.com/get-docker/) på datorn
 
 Applikationen kör i en container genom att läsa igenom en fil som heter Dockerfile för att sätta upp och köra en container
@@ -56,7 +58,7 @@ ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 
 Det finns en workflow fil som heter [dotnet.yml](https://github.com/Kristianjimmefors/Dockertest/blob/main/.github/workflows/dotnet.yml) om man vill kolla på den, det den gör är att den bygger .NET applikationen.
 
-Workflow filen aktiveras när man pushar till main branchen.
+DockerTest workflow filen aktiveras när man pushar till main branchen.
 ```
 name: DockerTest
 
