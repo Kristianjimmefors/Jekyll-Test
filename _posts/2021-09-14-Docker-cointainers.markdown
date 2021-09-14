@@ -108,9 +108,9 @@ Det är hit som docker imagen pushas och även dit man går för att hämta hem 
 För att kunna logga in på Hithub Container Registry måste man skapa en personal access token. Det gör man genom att gå in på konto inställningar och sedan finns det under developer settings. Skriv ner eller kopiera strängen med text som har genererats för den försvinner när sidan har uppdaterats.
 
 Här har jag skapat en personal access token som heter DockerTest
-[Github ACT](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/github-act.PNG)
+![Github ACT](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/github-act.PNG)
 
 Efter man har skapat en personal access token (och kopierat den) så går man in på inställningar i sitt github repo och sedan secrets. Här skapar man sina action secrets. Som bilden visar så har jag skapt en action secret som heter CR_PAT och den kan man uppdatera med en ny personal access token när den har gått ut
 
-[Github Action Secrets](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/github-action-secret.PNG)
+![Github Action Secrets](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/github-action-secret.PNG)
 
