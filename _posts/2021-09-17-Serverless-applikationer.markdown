@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internet och Moln
+title: Serverless applikationer
 subtitle: Uppgift 1
 cover-img: /assets/img/cloud-show.jpg
 thumbnail-img: /assets/img/cloud-show.jpg
