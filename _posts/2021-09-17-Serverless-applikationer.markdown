@@ -71,7 +71,11 @@ Jag testade köra appen på localhost med Postman och fick det att funka men nä
 Jag har använt mig av Azure keys och satt så bara personer med rätt admin nyckel får använda API:et. Vilket funkar bra så länge man bara ska använda API:et privat eller av ett få antal personer. Om andra ska använda API:et så måste dom få Admin nyckeln vilket man helst inte ska dela ut på grund av säkerhetsrisker.
 
 ### Referenser
+
 [Serverless computing](https://en.wikipedia.org/wiki/Serverless_computing)
+
 [Function as a service](https://en.wikipedia.org/wiki/Function_as_a_service)
+
 [HTTP Trigger Azure Function App](https://www.c-sharpcorner.com/article/how-to-create-an-http-trigger-azure-function-app-using-visual-studio-20172/)
+
 [Postman](https://www.postman.com/)
