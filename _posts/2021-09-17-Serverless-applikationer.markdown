@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serverless applikationer
-subtitle: Uppgift 1
+subtitle: Uppgift 4
 cover-img: /assets/img/cloud-show.jpg
 thumbnail-img: /assets/img/cloud-show.jpg
 share-img: /assets/img/cloud-show.jpg
