@@ -57,19 +57,19 @@ public static class Calculator
 
 Jag tog och skapade upp ett Visual studio projekt med en mall för Azure function app. När man har byggt en Azure funktioin app i Visual studio så kan man pusha den till Azure via Build fliken högsupp i programmet. När man gjort det är det bara logga in på sitt Azure konto och följa instruktionerna. Efter det så kan man logga in på Azures hemsida för att se den. Efter det så kan det se ut så här i Visual studio.
 
-[Image to push to Azure](https://github.com/Kristianjimmefors/Programmerings-grottan/blob/main/assets/img/Asure-push.PNG)
+[Image to push to Azure](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Asure-push.PNG)
 
 Så här ser det ut på Azures sida.
 
-[Azure sidan](https://github.com/Kristianjimmefors/Programmerings-grottan/blob/main/assets/img/Function-app.PNG)
+[Azure sidan](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Function-app.PNG)
 
 ## Testing
 
 Jag testade köra appen på localhost med Postman och fick det att funka men när jag testade på min Azure sida och då fick jag bara svar med en HTML sida som säger att Azure appen funkar.
 
-[Localhost testing](https://github.com/Kristianjimmefors/Programmerings-grottan/blob/main/assets/img/Localhost-testing.PNG)
+[Localhost testing](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Localhost-testing.PNG)
 
-[Azure testing](https://github.com/Kristianjimmefors/Programmerings-grottan/blob/main/assets/img/Azure-test.PNG)
+[Azure testing](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Azure-test.PNG)
 
 ## Säkerhet
 
