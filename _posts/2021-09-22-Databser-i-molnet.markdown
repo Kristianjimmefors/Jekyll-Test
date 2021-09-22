@@ -34,34 +34,34 @@ Här är koden för att lägga till en ny sak i todo listan och här har jag gjo
         public static async Task<IActionResult> CreateTodo(
             [HttpTrigger(AuthorizationLevel.Admin, "post", Route = "todo")] HttpRequest req,
             [CosmosDB(
-                databaseName: "ToDoList",
-                collectionName: "Items",
+                databaseName: "ToDo",
+                collectionName: "Tasks",
                 ConnectionStringSetting = "CosmosDBConnection")]
             IAsyncCollector<object> todos, ILogger log)
         {
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             var input = JsonConvert.DeserializeObject<Todo>(requestBody);
 
-            var todo = new Todo() { Id = req.Query["id"], Name = req.Query["name"], Description = req.Query["description"] };
+            var todo = new Todo() { Id = req.Query["id"], Name = req.Query["name"], Description = req.Query["description"], Category = req.Query["category"] };
             if (input != null)
             {
                 todo = new Todo() { Description = input.Description, Name = input.Name };
             }
 
-            await todos.AddAsync(new { id = todo.Id, todo.Name, todo.Description, todo.Created, todo.IsCompleted, todo.PartitionKey });
+            await todos.AddAsync(new { id = todo.Id, todo.Name, todo.Description, todo.Created, todo.IsCompleted, todo.Category });
 
             return new OkObjectResult(todo);
         }
 ```
 
-För att hämta ut ett item ifrån databasen så görs det lätt med ```CosmosDB(databaseName: "ToDoList", collectionName: "Items", ConnectionStringSetting = "CosmosDBConnection", Id ="{id}", PartitionKey ="{category}")``` vilket gör att man inte behöver skriva någon sql querry. ```CosmosDBConnection``` reffererar till en connection string som ligger i local.settings.json filen.
+För att hämta ut ett item ifrån databasen så görs det lätt med ```CosmosDB(databaseName: "ToDo", collectionName: "Tasks", ConnectionStringSetting = "CosmosDBConnection", Id ="{id}", PartitionKey ="{category}")``` vilket gör att man inte behöver skriva någon sql querry. ```CosmosDBConnection``` reffererar till en connection string som ligger i local.settings.json filen.
 ```C#
         [FunctionName("GetTaskById")]
         public static IActionResult GetTaskById(
             [HttpTrigger(AuthorizationLevel.Admin, "get", Route = "todo/{id}/{category}")] HttpRequest req,
             [CosmosDB(
-                databaseName: "ToDoList",
-                collectionName: "Items",
+                databaseName: "ToDo",
+                collectionName: "Tasks",
                 ConnectionStringSetting = "CosmosDBConnection",
             Id ="{id}",
             PartitionKey ="{category}")] Todo todo,
@@ -86,8 +86,8 @@ För att få fram alla items ifrån databasen så kör jag queryn i Cosmos DB tr
         public static IActionResult GetAllTasks(
         [HttpTrigger(AuthorizationLevel.Admin, "get", Route = "todo")] HttpRequest req,
         [CosmosDB(
-                    databaseName: "ToDoList",
-                    collectionName: "Items",
+                    databaseName: "ToDo",
+                    collectionName: "Tasks",
                     ConnectionStringSetting = "CosmosDBConnection",
                     SqlQuery = "SELECT * FROM c WHERE c.IsCompleted = false order by c._ts desc")]
                     IEnumerable<Todo> todos
@@ -106,7 +106,7 @@ jag tog och skapade en uri som länkar till databasen och collectionen som allt 
                     ConnectionStringSetting = "CosmosDBConnection")] DocumentClient client,
             ILogger log, string id, string category)
         {
-            Uri collectionUri = UriFactory.CreateDocumentCollectionUri("ToDoList", "Items");
+            Uri collectionUri = UriFactory.CreateDocumentCollectionUri("ToDo", "Tasks");
 
             //enable cross partition querry
             var options = new FeedOptions { EnableCrossPartitionQuery = true };
