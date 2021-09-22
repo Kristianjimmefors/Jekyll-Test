@@ -128,17 +128,17 @@ jag tog och skapade en uri som länkar till databasen och collectionen som allt 
 
 jag använder Azure Cosmos DB serverless och i den så finns det en databas som heter ToDo och den har en container som heter Tasks. Den har en Partition key som heter Category så man vet vilken kategori som ens Task tillhör.
 
-![Cosmos DB bild]()
+![Cosmos DB bild](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/CosmosDB.PNG)
 
 För att få igång databasen så gjorde jag bara en ny resurs av Cosmos DB, valde serverless  och följde de andra instruktionerna för att skapa instansen och göra en ny databas. Uppdatering av databasen är inte något som jag har tänkt så mycket på eftersom att det är ett väldigt simpelt projekt och databasen behöver inte vara mer avanserad just nu. Om man behöver så kan man lägga till en ny container om man tycker att det behövs, databasen är väldigt simple och behöver inte bli mer avancerad om man inte bygger ut applikationen mer. Databasen är väldigt simple så man behöver inte tänka på så mycket om eller runt den.
 
 ## Driftkostnad
 
 Om man inte har så många användare så kanske detta skulle passa och då kostar det 59 Dollar eller ca 510 Kr i månaden.
-![Small Cosmos DB Price]()
+![Small Cosmos DB Price](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Small-Price-CosmosDB.PNG)
 
 Om man har väldigt många användare såkanske detta skulle passa och då kostar det 9550 Dollar eller ca 82777 Kr i månaden
-![Big Cosmos DB Price]()
+![Big Cosmos DB Price](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Big-Price-CosmosDB.PNG)
 
 ## Referenser
 
