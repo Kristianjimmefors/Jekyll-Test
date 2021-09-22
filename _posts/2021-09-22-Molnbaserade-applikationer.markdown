@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serverless applikationer
-subtitle: Uppgift 4
+title: Databaser i molnet
+subtitle: Uppgift 5
 cover-img: /assets/img/cloud-show.jpg
 thumbnail-img: /assets/img/cloud-show.jpg
 share-img: /assets/img/cloud-show.jpg
@@ -12,7 +12,7 @@ categories: [Internet, serverless]
 
 Jag har gjort en simple todo lista där man kan läggat till, ta bort och visa alla eller en sak i listan.
 
-För koden följde jag denna guide [Creating simple CRUD API](https://markheath.net/post/azure-functions-rest-csharp-bindings) för det mesta. Koden använder sig utav cosmos db som databas.
+För koden följde jag denna guide [Creating simple CRUD API](https://markheath.net/post/azure-functions-rest-csharp-bindings) för det mesta. Koden använder sig utav cosmos db som databas. Koden körs i azure functions och för att pusha dit den så gjorde jag det via Visual studio. Därifrån gjorde jag en function app och sedan pushade koden ifrån Visual studio.
 
 Klassen som jag anävnder har två properties som har standard värden annars får man tilldela dem andra värden själv.
 
