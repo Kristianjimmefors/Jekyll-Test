@@ -12,9 +12,9 @@ categories: [Internet, serverless]
 
 Jag har gjort en simple todo lista där man kan läggat till, ta bort och visa alla eller en sak i listan.
 
-För koden följde jag denna guide [Creating simple CRUD API](https://markheath.net/post/azure-functions-rest-csharp-bindings) för det mesta.
+För koden följde jag denna guide [Creating simple CRUD API](https://markheath.net/post/azure-functions-rest-csharp-bindings) för det mesta. Koden använder sig utav cosmos db som databas.
 
-Här är koden för att lägga till en ny sak i todo listan och här har jag gjort ett litet fult sätt för att skapa ett id som jag lägger till istället för ett auto genererat.
+Här är koden för att lägga till en ny sak i todo listan och här har jag gjort ett litet fult sätt för att skapa ett id som jag lägger till istället för ett auto genererat. Det finns även en backup här i koden ifall ```input``` variablen blir null.
 ```C#
 [FunctionName("CreateTodo")]
         public static async Task<IActionResult> CreateTodo(
@@ -25,7 +25,6 @@ Här är koden för att lägga till en ny sak i todo listan och här har jag gjo
                 ConnectionStringSetting = "CosmosDBConnection")]
             IAsyncCollector<object> todos, ILogger log)
         {
-            log.LogInformation("Creating todo");
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             var input = JsonConvert.DeserializeObject<Todo>(requestBody);
 
@@ -41,21 +40,19 @@ Här är koden för att lägga till en ny sak i todo listan och här har jag gjo
         }
 ```
 
-
+För att hämta ut ett item ifrån databasen så görs det lätt med ```CosmosDB(databaseName: "ToDoList", collectionName: "Items", ConnectionStringSetting = "CosmosDBConnection", Id ="{id}", PartitionKey ="{category}")``` vilket gör att man inte behöver skriva någon sql querry. ```CosmosDBConnection``` reffererar till en connection string som ligger i local.settings.json filen.
 ```C#
         [FunctionName("GetTaskById")]
         public static IActionResult GetTaskById(
-            [HttpTrigger(AuthorizationLevel.Admin, "get", Route = "todo/{id}")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Admin, "get", Route = "todo/{id}/{category}")] HttpRequest req,
             [CosmosDB(
                 databaseName: "ToDoList",
                 collectionName: "Items",
                 ConnectionStringSetting = "CosmosDBConnection",
             Id ="{id}",
-            PartitionKey ="Todo")] Todo todo,
-            ILogger log, string id)
+            PartitionKey ="{category}")] Todo todo,
+            ILogger log, string id, string category)
         {
-
-            log.LogInformation("Geting todo with " + id);
 
             if (todo == null)
             {
@@ -69,6 +66,7 @@ Här är koden för att lägga till en ny sak i todo listan och här har jag gjo
         }
 ```
 
+För att få fram alla items ifrån databasen så kör jag queryn i Cosmos DB triggern och exporterar resultatet av queryn som körs till ```IEnumerable<Todo> todos``` som sedan returneras i ett okej objekt resultat.
 ```C#
         [FunctionName("GetAllTasks")]
         public static IActionResult GetAllTasks(
@@ -77,12 +75,10 @@ Här är koden för att lägga till en ny sak i todo listan och här har jag gjo
                     databaseName: "ToDoList",
                     collectionName: "Items",
                     ConnectionStringSetting = "CosmosDBConnection",
-                    SqlQuery = "SELECT * FROM c order by c._ts desc")]
+                    SqlQuery = "SELECT * FROM c WHERE c.IsCompleted = false order by c._ts desc")]
                     IEnumerable<Todo> todos
                 , ILogger log)
         {
-            log.LogInformation("Geting todos");
-
             return new OkObjectResult(todos);
 
         }
@@ -91,12 +87,12 @@ Här är koden för att lägga till en ny sak i todo listan och här har jag gjo
 ```C#
         [FunctionName("DeleteTodo")]
         public static async Task<IActionResult> DeleteTodo(
-            [HttpTrigger(AuthorizationLevel.Admin, "delete", Route = "todo/{id}")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Admin, "delete", Route = "todo/{id}/{category}")] HttpRequest req,
             [CosmosDB(
                     databaseName: "ToDoList",
                     collectionName: "Items",
                     ConnectionStringSetting = "CosmosDBConnection")] DocumentClient client,
-            ILogger log, string id)
+            ILogger log, string id, string category)
         {
             Uri collectionUri = UriFactory.CreateDocumentCollectionUri("ToDoList", "Items");
 
@@ -111,7 +107,7 @@ Här är koden för att lägga till en ny sak i todo listan och här har jag gjo
 
             log.LogInformation("Deleting todo item {id}");
 
-            await client.DeleteDocumentAsync(document.SelfLink, new RequestOptions { PartitionKey = new Microsoft.Azure.Documents.PartitionKey("Todo") });
+            await client.DeleteDocumentAsync(document.SelfLink, new RequestOptions { PartitionKey = new Microsoft.Azure.Documents.PartitionKey(category) });
             return new OkObjectResult("Deleting todo item {id}");
 
         }
