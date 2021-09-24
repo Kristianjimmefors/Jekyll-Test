@@ -15,7 +15,7 @@ Jag har gjort en simple todo lista där man kan läggat till och visa alla "task
 För koden så tog jag hjälp utav [Develop an ASP.NET Core with Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/sql/sql-api-dotnet-application#create-a-new-mvc-application)
 
 Detta är det som behövs för att applikationen ska kunna komunisera med databasen i Azure. ```InitializeCosmosClientInstanceAsync``` metoden innehåller all nödvändig information så som namn på  databasen, container namn och partion key path. Den inehåller även account name och account key för cosmos databasen i azure.
-```
+```c#
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
@@ -39,7 +39,7 @@ Detta är det som behövs för att applikationen ska kunna komunisera med databa
 ```
 
 I ```CosmosDbService``` klassen ligger alla metoder för som komunicerar med databasen så som att hämta all data och lägga till ny. Den extendar ett interface för metoderna.
-```
+```c#
 public class CosmosDbService : ICosmosDbService
     {
         private Container _container;
@@ -123,7 +123,7 @@ public class CosmosDbService : ICosmosDbService
 ```
 
 Så här ser interfacet ut.
-```
+```c#
 public interface ICosmosDbService
     {
         Task<List<TaskItem>> GetNotCompletedItems();
@@ -133,7 +133,7 @@ public interface ICosmosDbService
     }
 ```
 Detta är klassen som används för applikationen och databasen, den har ett standard värde på Created så att det inte missas att skickas med.
-```
+```c#
 public class TaskItem
     {
         [JsonProperty(PropertyName = "id")]
@@ -157,7 +157,7 @@ public class TaskItem
 ```
 
 Här hämtars värdena ut som postats i ett formulär när man gör ett nytt "task" och läggs in i ett nytt TaskItem klassen. Efter det så körs metoden för att spara det i databasen.
-```
+```c#
     public class NewTaskModel : PageModel
     {
         private readonly ILogger<NewTaskModel> _logger;
