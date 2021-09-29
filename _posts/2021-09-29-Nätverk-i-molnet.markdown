@@ -8,6 +8,8 @@ share-img: /assets/img/cloud-show.jpg
 categories: [Internet, Nätverk]
 ---
 
+# Brev till CTO
+
 Kära CTO jag tycker du ska tänka om över ditt beslut om molnlagring och vår nuvarande nätverk. Det kan vara riskabelt att lägga upp produkter i molnet men inte om  man använder sig av säkerhetsprinciper som också är lätta att sätta upp.
 
 Vi kan använda oss utav Azure Private Link och Azure Service Bus för att kunna skicka data säkert. Med Azure private link så får man Privat åtkomst till tjänster på Azure plattformen via ett VPC (Virtual Private Cloud). Ett Virtual Private Cloud är ett säkert, isolerat privat moln som finns i ett offentligt moln. Azure Private Link ger även Skydd mot dataläckage och ger en global räckvidd genom att ansluta privat till tjänster som körs i andra regioner. Azure Service Bus används för att koppla bort applikationer och tjänster från varandra. Det ger följande fördelar som Lastbalansering, säker routing och överföring av data och kontroll över service och applikationsgränser och Koordinering av transaktionsarbete som kräver hög grad av tillförlitlighet. Med bara dem två tjänsterna kan man bygga ett säkert och stabilt grund för attbygga ut nätverket i framtiden. 
