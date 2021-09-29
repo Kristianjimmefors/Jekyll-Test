@@ -22,16 +22,16 @@ Här under kommer lite mer och bättre information om Azure Private Link och Azu
 Med Azure Private Link kan man komma åt Azure PaaS Services (till exempel Azure Storage och SQL Databaser ) och Azure hosted customer-owned/partner services via en privat endpoint i sitt virtuella nätverk. Trafik mellan ditt virtuella nätverk och tjänsten skickas i Microsoft backbone network. Vilket gör att man inte behöver skicka någon data öppet. Några fördelar med Azure private Link är:
 
 * Privat åtkomst till tjänster på Azure plattformen: Anslut vårat virtuella nätverk till tjänster i Azure utan en offentlig IP adress vid sourcen eller destinationen. Private Link -plattformen hanterar anslutningen mellan konsument och tjänster över Azure backbone network.
-..* Lokala och peered-nätverk: Åtkomst till tjänster som körs i Azure från lokala via ExpressRoute privat peering, VPN-tunnlar och virtuella nätverk med privata slutpunkter. Private Link ger ett säkert sätt att migrera arbetsbelastningar till Azure.
-..* Skydd mot dataläckage: En privat slutpunkt mappas till en instans av en PaaS -resurs istället för hela tjänsten. Konsumenter kan bara ansluta till den specifika resursen. Åtkomst till andra resurser i tjänsten är blockerad. Denna mekanism ger skydd mot dataläckage.
-..* Global räckvidd: Anslut privat till tjänster som körs i andra regioner. Konsumentens virtuella nätverk kan vara i region A och det kan ansluta till tjänster bakom Private Link i region B.
+* Lokala och peered-nätverk: Åtkomst till tjänster som körs i Azure från lokala via ExpressRoute privat peering, VPN-tunnlar och virtuella nätverk med privata slutpunkter. Private Link ger ett säkert sätt att migrera arbetsbelastningar till Azure.
+* Skydd mot dataläckage: En privat slutpunkt mappas till en instans av en PaaS -resurs istället för hela tjänsten. Konsumenter kan bara ansluta till den specifika resursen. Åtkomst till andra resurser i tjänsten är blockerad. Denna mekanism ger skydd mot dataläckage.
+* Global räckvidd: Anslut privat till tjänster som körs i andra regioner. Konsumentens virtuella nätverk kan vara i region A och det kan ansluta till tjänster bakom Private Link i region B.
 
 ### Azure service bus
 
 Microsoft Azure Service Bus är en fullt hanterad företagsmeddelandemäklare med meddelandeköer och publicera-prenumerera ämnen. Service Bus används för att koppla bort applikationer och tjänster från varandra, vilket ger följande fördelar:
-..* Lastbalansering
-..* Säker routing och överföring av data och kontroll över service och applikationsgränser
-..* Koordinering av transaktionsarbete som kräver hög grad av tillförlitlighet
+* Lastbalansering
+* Säker routing och överföring av data och kontroll över service och applikationsgränser
+* Koordinering av transaktionsarbete som kräver hög grad av tillförlitlighet
 
 
 
