@@ -12,7 +12,7 @@ categories: [Internet, Molnet]
 
 Jag har gjort en konsolapplikation som kan ladda upp filer till [Azure Blob Storage](https://azure.microsoft.com/sv-se/services/storage/blobs/). Man lägger filen i en mapp och ändrar en variabel till namnet på filen som man lade till i mappen. Här är ett diagram som visar hur datan flyter i applikationen: 
 
-![Dataflow]()
+![Dataflow](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Data-flow-blob.PNG)
 
 
 * ```BlobServiceClient``` klassen tillåter en att manipulera Azure storage resources och blob containrar.
@@ -65,7 +65,7 @@ Filerna som ska laddas upp ligger i en mapp som heter data. För att kunna ladda
 
 Med de inställningar som bilden visar så skulle det kosta 968 Dollar eller ca 8498 Kronor i månaden att driva applikationen och spara bilder. Om man skulle ha 1000 användare som laddar upp 100 MB data varje dag och alla bilder som finns sparade laddas ner tre gånger per dag så skulle priset skena iväg väldigt mycket. Eftersom att det laddas upp nästan 100 GB per dag så blir priset för lagringen väldigt dyr och lagringen står för nästan allt i priset. Detta exemple som bilden visar skulle bara klara att lagra data som laddats upp i ett år efter det så behövs det mer lagringsutrymme.  Om man har drivit applikationen i 5 år och sparat alla bilder så skulle det kosta 4370 Dollar och ca 38364 Kronor i månaden för att bara ha lagringsutrymmet för att ha sparat allt.
 
-![Cost of running big applikation]()
+![Cost of running big applikation](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/blob-storage-cost.PNG)
 
 ## Säkerhet Blob storage
 
