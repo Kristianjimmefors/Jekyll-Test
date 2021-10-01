@@ -74,6 +74,9 @@ När datan inte förflyttar sig så är den krypterad. När datan skrivs till Bl
 
 ## Referenser
 [Azure Blob Storage using a .NET Core Console Application](https://medium.com/@rammonzito/azure-blob-storage-using-a-net-core-console-application-106a0c2e6de5)
+
 [how does azure encrypt data](https://cloudacademy.com/blog/how-does-azure-encrypt-data/)
+
 [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
+
 [Convert bytes](https://convertlive.com/u/convert/bytes/to/megabytes)
