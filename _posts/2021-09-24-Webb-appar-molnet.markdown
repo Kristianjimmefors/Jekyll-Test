@@ -188,16 +188,16 @@ Här hämtars värdena ut som postats i ett formulär när man gör ett nytt "ta
 ## Köra appen i azure
 
 För att få applikationen att köra i azure så pushade jag upp den till Azure container regestry via Visual studio eftersom den körs i docker. Efter det så skapade jag en ny Azure App Service via Visual Studio och när det var gjort så pushade jag applikationen dit. Först så gjock det inte att göra detta eftersom att containern i Azure Container Regestry inte hade admin user aktiverat. Efter det var aktiverat så funkade det att pusha applikationen till min app service.
-![Pusha via Visual Studio]()
+![Pusha via Visual Studio](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Push-to-asure.PNG)
 
 
 ## Prisskillnader
 
 Om man ska använda sig av Cosmos DB och Azure App Service med en liten applikation så kan det kosta 114 Dollar eller ca 985 Kr i månaden.
-![Low budget]()
+![Low budget](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Small-app-cosmos.PNG)
 
 Det kan kosta 10 658 Dollar eller ca 92030 Kr om man har väldigt många användare.
-![Big budget]()
+![Big budget](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Big-app-cosmos.PNG)
 
 ## Referenser
 
