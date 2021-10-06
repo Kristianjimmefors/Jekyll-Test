@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filer i målnet
-subtitle: Uppgift 8
+title: Monitotering i molnet
+subtitle: Uppgift 9
 cover-img: /assets/img/cloud-show.jpg
 thumbnail-img: /assets/img/cloud-show.jpg
 share-img: /assets/img/cloud-show.jpg
