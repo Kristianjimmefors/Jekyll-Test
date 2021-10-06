@@ -12,7 +12,7 @@ categories: [Internet, Molnet]
 
 Appen som jag har laggt till monitorering på är den som gjordes i uppgift 6. Det är en todo list applikation som visar ens todos och så kan man lägga till och ta bort todos. Här är en bild som visar hur applikationen är kopplad till databasen och med applicatin insight.
 
-![Application connecntions]()
+![Application connecntions](https://raw.githubusercontent.com/Kristianjimmefors/Programmerings-grottan/main/assets/img/Todo-data-flow.PNG)
 
 ## koden
 Om ni vill kolla på koden för hela applikationen och inte bara för loggingen så läs [Webappar i målnet](https://kristianjimmefors.github.io/Programmerings-grottan/internet/m%C3%A5ln/2021/09/24/Webb-appar-molnet.html) där applikationen är beskriven.
