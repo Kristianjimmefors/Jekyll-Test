@@ -18,6 +18,7 @@ categories: [Internet, Skalning]
 Skala vertikalt eller skala upp som det även heter så ökar man resurserna på den givna servern. Resurser för en server grupperas under [SKU](https://docs.microsoft.com/en-us/partner-center/develop/product-resources#sku) eller prissättning. För att skala upp en instans så gör man det genom att välja en annan app service plan i azure, när man gör det så ser man vad det kommer kosta och vad för hårdvara som ingår. Det finns en gräns på hur mycket man kan skala upp, när man kommit nära den så kan det bara bättre att skala horisontalt istället. När man skalar ner så reduceras resurserna till serven. Exemple på att skala upp en applikation kan vara att öka RAM eller processorkraft för den virtuella maskinen som serven körs på.
 
 ![Vertikal skalning](https://i1.wp.com/thecodeblogger.com/wp-content/uploads/2020/06/azure-scale-up.png?resize=1200%2C800&ssl=1)
+
 [Bild ifrån thecodeblogger.com](https://i1.wp.com/thecodeblogger.com/wp-content/uploads/2020/06/azure-scale-up.png?resize=1200%2C800&ssl=1)
 
 ### Skala horisontalt
